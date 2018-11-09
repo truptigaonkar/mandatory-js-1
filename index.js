@@ -15,11 +15,7 @@ let contactId = document.getElementById('contact');
 let aboutId = document.getElementById('about');
 mainId.insertBefore(aboutId, contactId);
 
-// Adding about and contact h2 //
-let aboutH2 = document.createElement('h2');
-aboutH2.textContent = "About";
-aboutId.appendChild(aboutH2);
-
+// Adding contact h2 //
 let contactH2 = document.createElement('h2');
 contactH2.textContent = "Contact";
 contactId.appendChild(contactH2);
@@ -28,14 +24,43 @@ contactId.appendChild(contactH2);
 let contactPTag = document.getElementsByTagName('p');
 contactId.insertBefore(contactH2, contactPTag[0]);
 
+//set text in about section into p-tag
+let AboutPTag = document.createElement("p");
+AboutPTag.textContent = aboutId.textContent;
+aboutId.textContent = "";
+aboutId.appendChild(AboutPTag);
+
+// Adding about h2 //
+let aboutH2 = document.createElement('h2');
+aboutH2.textContent = "About";
+aboutId.appendChild(aboutH2);
+
+// Bringing About h2 header above p tag content // 
+let aboutPTag = document.getElementsByTagName('p')[0];
+aboutId.insertBefore(aboutH2, aboutPTag);  
+
+// Replace all td elements in thead to th
+let td1 = document.getElementsByTagName('td')[0];
+let td2 = document.getElementsByTagName('td')[1];
+let th1 = document.createElement('th');
+let th2 = document.createElement('th');
+th1.textContent = td1.textContent;
+th2.textContent = td2.textContent;
+td1.replaceWith(th1);
+td2.replaceWith(th2); 
+/* let toReplace = document.querySelectorAll("thead td");
+for (let td of toReplace) {
+  let th = document.createElement("th");
+  th.textContent = td.textContent;
+  td.replaceWith(th);
+} */
+
 // Include main.css file to head e.g.<link rel="stylesheet" href="main.css"> //
 let head = document.querySelector('head');
 let link = document.createElement('link');
-/*
-// Det funkar också
+/* // Det funkar också
 link.setAttribute('rel','stylesheet');
-link.setAttribute('href','main.css');
-*/
+link.setAttribute('href','main.css'); */
 link.innerHTML = '<link rel="stylesheet" href="main.css">';
 head.appendChild(link);
 
