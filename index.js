@@ -1,7 +1,6 @@
 // Changing company name //
-let header = document.querySelector('h1');
-header.innerHTML = '<h1>Fruits &amp; Vegetables Corp</h1>';
-//header.textContent = "Fruits & Vegetables Corp";
+let headerH1 = document.querySelector('h1');
+headerH1.textContent = "Fruits & Vegetables Corp";
 
 // Change last a tag textContent and href attribute //
 let tagA = document.getElementsByTagName('a');
@@ -24,7 +23,7 @@ contactId.appendChild(contactH2);
 let contactPTag = document.getElementsByTagName('p');
 contactId.insertBefore(contactH2, contactPTag[0]);
 
-//set text in about section into p-tag
+//set text in about section into p-tag by creating it //
 let AboutPTag = document.createElement("p");
 AboutPTag.textContent = aboutId.textContent;
 aboutId.textContent = "";
@@ -48,24 +47,25 @@ th1.textContent = td1.textContent;
 th2.textContent = td2.textContent;
 td1.replaceWith(th1);
 td2.replaceWith(th2); 
-/* let toReplace = document.querySelectorAll("thead td");
-for (let td of toReplace) {
+/* let replaceElement = document.querySelectorAll("thead td");
+for (let td of replaceElement) {
   let th = document.createElement("th");
   th.textContent = td.textContent;
   td.replaceWith(th);
 } */
 
-// Include main.css file to head e.g.<link rel="stylesheet" href="main.css"> //
+// Include main.css file to head //
 let head = document.querySelector('head');
 let link = document.createElement('link');
-/* // Det funkar också
 link.setAttribute('rel','stylesheet');
-link.setAttribute('href','main.css'); */
-link.innerHTML = '<link rel="stylesheet" href="main.css">';
+link.setAttribute('type', 'text/css'); 
+link.setAttribute('href','main.css'); 
+console.log(link);
+//link.innerHTML = '<link rel="stylesheet" type="text/css" href="main.css">';
 head.appendChild(link);
 
 // Changing title //
-let title = document.querySelector('h1');
+let title = document.querySelector('title');
 title.textContent = "Fruits & Vegetables Corp";
 
 
