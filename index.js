@@ -68,6 +68,22 @@ head.appendChild(link);
 let title = document.querySelector('title');
 title.textContent = "Fruits & Vegetables Corp";
 
+// // Solved using JQUERY //
+// $(document).ready(function(){
+//   $('h1').text('Fruits & Vegetables Corp');
+//   $('header ul li:last a').text("Vegetables");
+//   $('header ul li:last a').attr('href','#vegetables');
+//   $('#about').insertBefore('#contact');
+//   $('<h2>Contact</h2>').appendTo('#contact');
+//   $('#contact h2').insertBefore('p');
+//   $('<h2>About</h2>').appendTo('#about');
+//   $('thead td:first').replaceWith('<th>Name</th>');
+//   $('thead td:first').replaceWith('<th>Email</th>');
+//   $('head').append($('<link rel="stylesheet" type="text/css" href="main.css" />'));
+//   $('title').text('Fruits & Vegetables Corp');
+//   $('#about h2').insertBefore('#about');
+// });
+
 
 
 
