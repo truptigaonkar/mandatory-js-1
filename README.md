@@ -1,26 +1,5 @@
-# Mandatory Exercise 1 - JavaScript
+# DOM structure - JavaScript
 **The deadline for this exercise is Friday November 16 08:59**
-
-
-## Preparation
-
-1. Create a new repository on [Github](github.com) called **mandatory-js-1**
-
-2. Follow the instructions that Github gives you; create a local repository and add a remote or clone
-the recently created repository.
-
-## Submission
-
-When you do the submission of your exercise in Ping Pong, **before the deadline**,
-you will enter the link to your repository, such as:
-
-```
-https://github.com/mygithubusername/mandatory-js-1
-```
-
-The teacher will look in the **master branch**. If any commits are done to the master branch after the deadline, the grade IG will follow.
-
-You will either get **G** or **IG** on the mandatory exercises.
 
 ## Resources
 [https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
