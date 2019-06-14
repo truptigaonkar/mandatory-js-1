@@ -1,5 +1,4 @@
 # DOM structure - JavaScript
-**The deadline for this exercise is Friday November 16 08:59**
 
 ## Resources
 [https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
